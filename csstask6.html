@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Task6</title>
+    <style>
+        label{
+            font-weight: bold;
+        }
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .green{
+            background-color: green;
+            border-color: green;
+            color:white;
+        }
+        .width{
+            width: 100%;
+        }
+        p,table{
+            margin-left: 35%;
+            margin-right: 35%;
+        }
+        #red{
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+            border-color: red;
+        }
+        .link{
+            margin-left: 225px;
+            color:black
+        }
+        .grey_bg{
+            background-color: rgba(128, 128, 128, 0.26);
+        }
+        td{
+            padding:15px;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="./pfp.jpeg" width="150px" class="center"/>
+    <br />
+    <form action="http://www.ethnus.com">
+        <p>
+        <label for="un">Username</label> <br />
+        <input class="width" type="text" name="un" placeholder="Enter Username" required="true" /> <br />
+        </p>
+        <p>
+        <label for="pass">Password</label> <br />
+        <input class="width" type="password" name="pass" placeholder="Enter Password" required="true" /> <br />
+        </p>
+        <p>
+            <input type="submit" value="Login" class="green width"/>
+        </p>
+        <p><input type="checkbox" checked/> Remember me</p>
+        <br />
+        <table class="grey_bg">
+            <tr>
+                <td>
+                    <input type="reset"id="red"value="Cancel"/><a class="link"href="#">Forgot password?</a>
+                </td>
+            </tr>
+        
+        </table>
+    </form>
+</body>
+</html>
